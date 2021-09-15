@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+ 
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<style>
+.fa-inverse {
+    color: #fff;
+    background-color: #c3a98a;
+    border-radius: 50%;
+}
+.fa-stack {
+    position: relative;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    vertical-align: middle;
+    font-size: 15px;
+    margin-top: 10px;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+.slick-slide.slick-current.slick-active {
+    background-color: rgba(0,0,0,.2) !important;
+
+}
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+.btnss{
+	  background-color: #2136d2;
+      border: none;
+      color: #fff;
+      padding: 8px 15px;
+	  margin-top:10px;
+	  border-radius:5px;
+	}
+.nav > .nav-links {
+    display: inline;
+    float: right;
+    margin-top: 12px;
+    font-size: 10px;
+}
+.nav-links span {
+    background-color: #b3946f;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+.nav > .nav-links > a {
+  display: inline-block;
+    font-size: 13px;
+    text-decoration: none;
+    color: #000;
+    margin-left: 8px;
+    font-weight: 700;
+}
+.nav-links .fa.fa-bars {
+    margin-left: 10px;
+}
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+.button {
+    background-color:#b3946f;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0px 0px;
+    cursor: pointer;
+    font-weight: 300;
+}
+button.btn.explore-btn {
+    background-color: #fff;
+    border: none;
+    color: #000;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0px 0px;
+    cursor: pointer;
+    font-weight: 300;
+	vertical-align:top;
+}
+i.fa.fa-play {
+    margin-right: 6px;
+    background-color: #000;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 8px;
+	color:#fff;
+}
+.marketing-customer {
+    text-align: center;
+    background-color: #ccb8a1;
+    padding-top: 45px;
+    padding-bottom: 100px;
+}
+.marketing-customer h1, p {
+    color: #fff;
+	font-weight:400;
+}
+.column {
+    float: left;
+    width: 40%;
+    padding: 0px;
+    height: 300px;
+    background-color: #76aeced4;
+    position: absolute;
+	padding-top: 85px;
+    padding-left: 55px;
+}
+/*.column1 {
+    float: right;
+    width: 70%;
+    padding: 0px;
+    height: 300px;
+    background-image: url(https://www.indegene.com/sites/default/files/Solution_MarketingandCustomerExperience_CreativeandDesign_Banner.jpg);
+	position:intial;
+}*/
+.column1 {
+    float: right;
+    width: 70%;
+    padding: 0px;
+    height: 300px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVcwWVed11ayinq6YshzXmo0HS6i-cbJ8hhw&usqp=CAU);
+	position:intial;
+}
+.column2 {
+    float: left;
+    width: 50%;
+    padding: 0px;
+    height: 300px;
+
+    position: absolute;
+	padding-top: 85px;
+    padding-left: 150px;
+}
+.column2 p{
+color:#000;
+}
+.column3 {
+    float: right;
+    width: 50%;
+    padding: 0px;
+    height: 300px;
+    
+	position:intial;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.digital h4{
+    color: #000;
+    font-weight: 400;
+    
+    font-size: 20px;
+}
+.marketing-customer1{
+   text-align:center;
+}
+.marketing-customer1 h4{
+   text-align:center;
+   margin-block-end: 0.33em;
+}
+.marketing-customer1 h5 {
+    color: #c3978a;
+    font-size: 14px;
+    margin-block-end: 0em;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    margin-block-start: -1em;
+}
+i.fa.fa-camera-retro.fa-5x {
+    color: #000;
+    border: 4px solid #c3978a;
+    border-radius: 50%;
+    float: right;
+}
+.fa-5x {
+    font-size: 5em;
+    padding: 30px;
+}
+.column2a {
+    float: left;
+    width: 70%;
+    padding: 0px;
+   
+}
+.column2a p{
+color:#c3978a;
+text-align:justify;
+margin-top:4px;
+}
+.column3a {
+    float: right;
+    width: 20%;
+    padding: 0px;
+  
+}
+.column2a h4{
+    text-align: end;
+    margin-block-start: 0.33em;
+    margin-block-end: 0em;
+}
+.column7a h4{
+  
+    margin-block-start: 0.33em;
+    margin-block-end: 0em;
+}
+.column4a {
+    float: left;
+    width: 48%;
+    padding-top: 30px;
+   
+    padding-left: 100px;
+}
+
+.column5a {
+    float: left;
+    width: 65%;
+    padding: 0px;
+    height: 300px;
+}
+.column5a p{
+color:#000;
+text-align:justify;
+}
+.column5b {
+    float: right;
+    width: 20%;
+    padding: 0px;
+    height: 300px;
+    
+	position:intial;
+}
+.column2a h4{
+text-align:end;
+}
+.column5 {
+    float: left;
+    width: 50%;
+    padding-top: 30px;
+    
+    padding-left: 20px;
+	padding-right: 100px;
+}
+
+
+
+
+.column6a {
+    float: left;
+    width: 20%;
+    padding: 0px;
+   
+	 margin-left: 20px;
+}
+.column7a p{
+   color:#c3978a;
+   text-align:justify;
+   margin-top: 4px;
+}
+.column7a {
+    float: right;
+    width: 70%;
+    padding: 0px;
+}
+.column6a h4{
+text-align:end;
+}
+.fa-5x {
+    font-size: 4em;
+    padding: 20px;
+}
+i.fa.fa-flag.fa-5x {
+    color: #000;
+    border: 4px solid #c3978a;
+    border-radius: 50%;
+    float: right;
+}
+
+
+/* slider */
+.desc p {
+    margin: 20px 0 0;
+    padding: 0;
+} 
+
+.desc p {
+    color: #fff;
+}
+.slider {
+    
+    width: 100%;
+    margin: 0px auto;
+   
+    border-radius: 0px;
+    padding: 0px 0;
+   
+}
+.sliderpart {
+   background-image: url(https://vastphotos.com/files/uploads/photos/10691/peaceful-water-landscape-photo-l.jpg);
+   margin-top: 35px;
+   margin-bottom: 30px;
+}
+.sliderpart h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    font-size: 25px;
+    padding-top: 40px;
+}
+
+
+.slick-slider .slick-prev{
+    left:0px;
+}
+.slick-slider .slick-prev::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f104";
+    font-size:30px;
+    color:#bf0606;
+    left: 8px;
+    position: relative;
+    z-index: 10;
+}
+.slick-slider .slick-next{
+    right:0px;
+}
+.slick-slider .slick-next::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f105";
+    font-size:30px;
+    color:#bf0606;
+    right: 15px;
+    position: relative;
+    z-index: 10;
+}
+.slick-slide {
+    color: #333;
+    padding: 40px 0;
+    font-size: 1.25em;
+    font-family: "Verdana";
+    text-align: center;
+    pointer-events: none;
+	margin-left:-10px;
+}
+
+.slick-slide .desc {
+    opacity: 1;
+}
+
+.slick-slide .desc>* {
+    transition: all 900ms ease;
+}
+
+.slick-slide .desc h2 {
+    position: relative;
+    left: 50px;
+    line-height: 1;
+}
+.slick-slide .desc h2 span{
+    color:#bf0606;
+}
+.slick-slide .desc p {
+    position: relative;
+    top: 0px;
+    opacity: 1;
+	font-size:12px;
+}
+.desc h4 {
+    font-size: 15px;
+}
+.slick-slide img {
+    width: 30%;
+   margin-left: 35%;
+	
+}
+.slick-current.slick-slide img {
+    width: 30%;
+	margin-left: 35%;
+}
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+.slick-dots {
+    text-align: center;
+}
+
+.slick-dots li {
+    display: inline-block;
+    padding: 1px;
+    background: #ccc;
+    margin: 10px 5px;
+    width: 5px;
+    height: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.slick-dots li.slick-active {
+    background: #bf0606;
+}
+
+.slick-dots button {
+    display: none;
+}
+.slick-slide {
+    opacity: 0.2;
+    transition: all 300ms ease;
+}
+
+.slick-current {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.slick-current .desc {
+    opacity: 1;
+}
+
+.slick-current .desc h2 {
+    left: 0; 
+}
+
+.slick-current .desc p {
+    top: 0;
+    opacity: 1;
+}
+
+.event-column{
+   float: left;
+   width: 25%;
+}
+.event-column1{
+  float: right;
+  width: 70%;
+}
+
+.row.upcoming-event {
+    padding-left: 20%;
+    padding-right: 20%;
+	margin-top: 18px;
+}
+
+.event-column1 h4 {
+    margin-block-start: 0em;
+    margin-block-end: 0.33em;
+}
+.event-column1 span {
+    font-size: 12px;
+    color: #c3a98a;
+	font-style: italic;
+    font-weight: 700;
+}
+.event-column1 i {
+    margin-right: 10px;
+}
+button.button-event {
+    background-color: #c3a98a;
+    border: none;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0px 0px;
+    cursor: pointer;
+    font-weight: 300;
+	margin-top:10px;
+}
+.recent-blog{
+  float: left;
+  width: 33%;
+  padding-right: 12px;
+}
+.recent-blogs {
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: #faebd7;
+    padding-top: 25px;
+    margin-top: 25px;
+	padding-bottom: 55px;
+}
+.recent-blogs h3 {
+    text-align: center;
+    margin-block-end: 0em;
+}
+.recent-blogs h5 {
+    font-size: 12px;
+    color: #c3a98a;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    margin-block-start: 0.67em;
+}
+.event-column1.blog-evbt p {
+    font-size: 12px;
+    color: #c3a98a;
+    font-weight: 500;
+    margin-block-start: 0.67em;
+}
+.event-column.blog-even {
+    background-color:#c3a98a75;
+    text-align: center;
+    margin-top: -4px;
+	height: 161.5px;
+}
+.event-column.blog-even h1 {
+    margin-block-end: 0em;
+    margin-block-start: 0.5em;
+    color: #b3946f;
+}
+.event-column.blog-even h3 {
+    margin-block-end: 0em;
+    margin-block-start: 0em;
+    color: #b3946f;
+}
+.event-column.blog-even h3 {
+    margin-block-end: 0em;
+    margin-block-start: 0em;
+    color: #b3946f;
+    font-size: 13px;
+    font-style: italic;
+    height: 35px;
+}
+.event-column1.blog-evbt {
+    background-color: #fff;
+    width: 75%;
+    float: left;
+    margin-top: -4px;
+    padding-top: 20px;
+    padding-left: 16px;
+    padding-bottom: 20px;
+	padding-right: 5px;
+}
+.footer {
+    text-align: center;
+    background-color: #000;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.footer  p {
+    color: #fff;
+    font-weight: 400;
+	font-size: 10px;
+	margin-top: 20px;
+}
+.footer h1 {
+    color: #fff;
+    font-weight: 400;
+	
+}
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid grey;
+    width: 20%;
+    background: #f1f1f1;
+    margin-right: -5px;
+}
+
+form.example button {
+    width: 8%;
+    padding: 10px;
+    background: #b3946f;
+    color: white;
+    font-size: 15px;
+    border: 1px solid #b3946f;
+    border-left: none;
+    cursor: pointer;
+}
+.home-menu {
+    margin-top: 4px;
+}
+
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.footer a {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+}
+.row.our-comany {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+@media (max-width:600px) {
+.nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 7px 0px 0px 0px;
+}
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+.nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #000;
+    color: #000;
+}
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 59px;
+    left: 0px;
+    overflow-x: hidden;
+}
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+	display:none;
+  }
+  .column {
+    float: left;
+    width: 60%;
+    padding: 0px;
+    height: 300px;
+    background-color: #c9bd92e8;
+    position: absolute;
+    padding-top: 29px;
+    padding-left: 25px;
+}
+.column4a {
+    float: left;
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 0px;
+}
+.column2a {
+    float: left;
+    width: 64%;
+    padding: 0px;
+}
+.column5 {
+    float: left;
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 0px;
+}
+.row.upcoming-event {
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-top: 18px;
+}
+.event-column {
+    float: left;
+    width: 100%;
+}
+.event-column1 {
+    float: right;
+    width: 100%;
+    margin-top: 10px;
+}
+.recent-blogs {
+    padding-left: 5%;
+    padding-right: 2%;
+    background-color: #faebd7;
+    padding-top: 25px;
+    margin-top: 25px;
+    padding-bottom: 10px;
+}
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid grey;
+    width: 50%;
+    background: #f1f1f1;
+    margin-right: -5px;
+}
+
+form.example button {
+    width: 23%;
+    padding: 10px;
+    background: #b3946f;
+    color: white;
+    font-size: 15px;
+    border: 1px solid #b3946f;
+    border-left: none;
+    cursor: pointer;
+}
+.footer a {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    line-height: 25px;
+}
+.recent-blog {
+    float: left;
+    width: 100%;
+    padding-right: 12px;
+    margin-bottom: 30px;
+}
+.event-column.blog-even {
+    width: 25%;
+}
+.event-column1.blog-evbt {
+    background-color: #fff;
+    width: 75%;
+    float: left;
+    margin-top: -4px;
+    padding-top: 20px;
+    padding-left: 16px;
+    padding-bottom: 52px;
+    padding-right: 5px;
+}
+.nav > .nav-links {
+    display: inline;
+    float: right;
+    margin-top: -12px;
+    font-size: 10px;
+   
+}
+.home-menu {
+    margin-top: 4px;
+    display: none !important;
+}
+.nav-title .img-responsive {
+    width: 44% !important;
+}
+.nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 60px;
+    left: 0px;
+    overflow-x: hidden;
+    padding-top: 0px;
+    padding-left: 20px;
+}
+}
+@media (max-width: 360px){
+.event-column.blog-even {
+    background-color: #c3a98a75;
+    text-align: center;
+    margin-top: -4px;
+    height: 177.5px;
+}
+.marketing-customer {
+    text-align: left;
+    background-color: #ccb8a1;
+    padding-top: 45px;
+    padding-bottom: 100px;
+    padding-left: 19px;
+    padding-right: 0px;
+}
+.column {
+    float: left;
+    width: 60%;
+    padding: 0px;
+    height: 300px;
+    background-color: #c9bd92e8;
+    position: absolute;
+    padding-top: 29px;
+    padding-left: 25px;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+      <img src="data:image/png;base64,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" class="img-responsive" style="width:30%" alt="Image">
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  
+  <div class="nav-links">
+    <span><i class="fab fa-facebook-f"></i></span>
+    <span><i class="fab fa-linkedin-in"></i></span>
+    <span><i class="fab fa-twitter"></i></span>
+	<a href="#home" class="home-menu">MENU<i class="fa fa-bars"></i> </a>
+  </div>
+</div>
+<div class="marketing-customer">
+   <h1>Enterprise Marketing and Customer Experience</h1>
+   <p>LEVERAGE DATA TO DRIVE PERSONALIZATION AT SCALE</p>
+   <button class="button button2">The Global Transition</button>
+   <button class="btn explore-btn"><i class="fa fa-play"></i>Explore</button>
+</div>
+
+<div class="row">
+  <div class="column digital" style="">
+   <h4>THE DIGITAL SAVVY PHARMA MARKETER 2020</h4>
+   <p>"Must have tool for every pharm marketer"</p>
+   
+   <button class="btn explore-btn"><i class="fa fa-play"></i>Download</button>
+  </div>
+  <div class="column1" style="">
+  <!---  <img src="img/Solution_Marketingand.jpg" class="img-responsive" style="width:100%" alt="Image"> -->
+  </div>
+</div>
+<div class="marketing-customer1">
+   <h3>COMPANY</h3>
+   <h5>services</h5>
+</div>
+
+<div class="row our-comany">
+  <div class="column4a" style="">
+    <div class="column2a" style="">
+      <h4>Customer Experience</h4>
+      <p>"Customer-centric experiences with advanced technology-driven solutions that modernize medical affairs operations."</p>
+  </div>
+  <div class="column3a" style="">
+  <i class="fa fa-camera-retro fa-5x"></i>
+  </div>
+  </div>
+  <div class="column5" style="">
+     
+  <div class="column6a" style="">
+  <i class="fa fa-flag fa-5x"></i>
+  </div>
+  <div class="column7a" style="">
+      <h4>Co-commercialization</h4>
+      <p>"Customer-centric experiences with advanced technology-driven solutions that modernize medical affairs operations."</p>
+  </div>
+  </div>
+</div>
+
+<div class="row our-comany">
+  <div class="column4a" style="">
+    <div class="column2a" style="">
+      <h4>Data and Analytics</h4>
+      <p>"Customer-centric experiences with advanced technology-driven solutions that modernize medical affairs operations."</p>
+  </div>
+  <div class="column3a" style="">
+  <i class="fa fa-camera-retro fa-5x"></i>
+  </div>
+  </div>
+  <div class="column5" style="">
+     
+  <div class="column6a" style="">
+  <i class="fa fa-flag fa-5x"></i>
+  </div>
+  <div class="column7a" style="">
+      <h4>Data and Analytics</h4>
+      <p>"Customer-centric experiences with advanced technology-driven solutions that modernize medical affairs operations."</p>
+  </div>
+  </div>
+</div>
+
+<div class="row our-comany">
+  <div class="column4a" style="">
+    <div class="column2a" style="">
+      <h4>Digital Transformation</h4>
+      <p>"Customer-centric experiences with advanced technology-driven solutions that modernize medical affairs operations."</p>
+  </div>
+  <div class="column3a" style="">
+  <i class="fa fa-camera-retro fa-5x"></i>
+  </div>
+  </div>
+  <div class="column5" style="">
+     
+  <div class="column6a" style="">
+  <i class="fa fa-flag fa-5x"></i>
+  </div>
+  <div class="column7a" style="">
+      <h4>Digital Transformation</h4>
+      <p>"Customer-centric experiences with advanced technology-driven solutions that modernize medical affairs operations."</p>
+  </div>
+  </div>
+</div>
+
+<div class="sliderpart">
+<h1>INSPIRATIONAL TESTIMONY</h1>
+
+<section class="slider">
+    <div>
+      <img src="img/avatra.png">
+      <div class="desc">
+        <p>As the president, he is <br> responsible for new strategic <br> initiatives</p>
+		<div>
+        <button class="btnss">CEO</button>
+		</div>
+      </div>
+    </div>
+  
+    <div>
+      <img src="img/avatra.png">
+      <div class="desc">
+        <p>As one of the cofounders and <br>the CEO, He is <br>responsible for the company is <br>startegy</p>
+        <button class="btnss">President</button>
+      </div>
+    </div>
+  
+    <div>
+      <img src="img/avatra.png">
+      <div class="desc">
+        <p>is responsible for global <br>business development and <br>strategic account<br>management</p>
+		<button class="btnss">Executive VP</button>
+      </div>
+    </div>
+  
+    <div>
+      <img src="img/avatra.png">
+      <div class="desc">
+        <p>As the president, he is <br> responsible for new strategic <br> initiatives</p>
+        <button class="btnss">Clients</button>
+      </div>
+    </div>
+  
+  
+  </section> 
+ </div>
+<div class="row upcoming-event">
+  <div>
+    <h3>UPCOMING EVENTS</h3>
+  </div>
+  <div class="event-column">
+     <img src="https://seda.college/wp-content/uploads/party.jpg" class="" style="width:100%" alt="Image">
+  </div>
+  <div class="event-column1">
+       <h4>Global Pharmaceutial Regulatory Affairs Summit</h4>
+        <span><i class="fas fa-calendar-alt"></i>Monday 8:00 AM - Tuesday 8:00 PM</span><br>
+		<span><i class="fas fa-crosshairs"></i>Madisson Hotel</span><br>
+		<span><i class="fas fa-chart-area"></i>203 st. Mountain View, San Franciso, california, USA</span><br>
+		<button class="button-event">Read more</button>
+  </div>
+</div>
+<div class="row upcoming-event">
+  
+  <div class="event-column">
+     <img src="https://seda.college/wp-content/uploads/party.jpg" class="" style="width:100%" alt="Image">
+  </div>
+  <div class="event-column1">
+       <h4>World Drug Safety Congress Europe</h4>
+        <span><i class="fas fa-calendar-alt"></i>Monday 8:00 AM - Tuesday 8:00 PM</span><br>
+		<span><i class="fas fa-crosshairs"></i>Madisson Hotel</span><br>
+		<span><i class="fas fa-chart-area"></i>203 st. Mountain View, San Franciso, california, USA</span><br>
+		<button class="button-event">Read more</button>
+  </div>
+</div>
+
+<div class="row upcoming-event">
+  
+  <div class="event-column">
+     <img src="https://seda.college/wp-content/uploads/party.jpg" class="" style="width:100%" alt="Image">
+  </div>
+  <div class="event-column1">
+       <h4>Real World Data and Analytics Centers of Excellence</h4>
+        <span><i class="fas fa-calendar-alt"></i>Monday 8:00 AM - Tuesday 8:00 PM</span><br>
+		<span><i class="fas fa-crosshairs"></i>Madisson Hotel</span><br>
+		<span><i class="fas fa-chart-area"></i>203 st. Mountain View, San Franciso, california, USA</span><br>
+		<button class="button-event">Read more</button>
+  </div>
+</div>
+
+<div class="row upcoming-event">
+  
+  <div class="event-column">
+     <img src="https://seda.college/wp-content/uploads/party.jpg" class="" style="width:100%" alt="Image">
+  </div>
+  <div class="event-column1">
+       <h4>4th Promotional Review Committee Compliance & Best Practice</h4>
+        <span><i class="fas fa-calendar-alt"></i>Monday 8:00 AM - Tuesday 8:00 PM</span><br>
+		<span><i class="fas fa-crosshairs"></i>Madisson Hotel</span><br>
+		<span><i class="fas fa-chart-area"></i>203 st. Mountain View, San Franciso, california, USA</span><br>
+		<button class="button-event">Read more</button>
+  </div>
+</div>
+
+
+
+<div class="recent-blogs">
+  
+  <h3>RECENT BLOG</h3>
+  <h5>Our Blog</h5>
+  
+<div class="row">
+   <div class="recent-blog" style="">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxPvL_IAEpWpd7CSlmYt4FQE-L2GM3jLwROA&usqp=CAU" class="" style="width:100%" alt="Image">
+    <div class="event-column blog-even">
+       <h1>18</h1>
+	   <h3>January <br>2019</h3>
+	   <h3></h3>
+    </div>
+	<div class="event-column1 blog-evbt">
+       <h4>Press Release</h4>
+	   <p>Customer-centric experiences with advanced technology-driven solutions that modernize medical affairs operations</p>
+    </div>
+  </div>
+  <div class="recent-blog" style="">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxPvL_IAEpWpd7CSlmYt4FQE-L2GM3jLwROA&usqp=CAU" class="" style="width:100%" alt="Image">
+    <div class="event-column blog-even">
+       <h1>18</h1>
+	   <h3>January <br>2019</h3>
+	   <h3></h3>
+    </div>
+	<div class="event-column1 blog-evbt">
+       <h4>Press Release</h4>
+	   <p>Customer-centric experiences with advanced technology-driven solutions that modernize medical affairs operations</p>
+    </div>
+  </div>
+  <div class="recent-blog" style="">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxPvL_IAEpWpd7CSlmYt4FQE-L2GM3jLwROA&usqp=CAU" class="" style="width:100%" alt="Image">
+    <div class="event-column blog-even">
+       <h1>18</h1>
+	   <h3>January <br>2019</h3>
+	   <h3></h3>
+    </div>
+	<div class="event-column1 blog-evbt">
+       <h4>Press Release</h4>
+	   <p>Customer-centric experiences with advanced technology-driven solutions that modernize medical affairs operations</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="footer">
+   <h1>NEWSLETTER</h1>
+    <form class="example" action="/action_page.php">
+       <input type="text" placeholder="Enter email address" name="email">
+       <button type="submit">Subscribe</button>
+    </form>
+   <p><a href="">@2019 Indegene. All rights reserved</a> |<a href="">Contact Us</a>|<a href="">Privacy Policy </a>|<a href="">CSR Policy</a></p>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script> 
+<script>
+	function createSlick(){  
+
+	$(".slider").not('.slick-initialized').slick({
+		centerMode: true,
+	    autoplay: true,
+	    dots: true, 
+        arrows: false,
+  		slidesToShow: 3,
+	    responsive: [{ 
+	        breakpoint: 768,
+	        settings: {
+	            dots: false,
+	            arrows: false,
+	            infinite: true,
+	            slidesToShow: 1,
+	            slidesToScroll: 1
+	        } 
+	    }]
+	});	
+
+} 
+createSlick();
+
+//Will not throw error, even if called multiple times.
+$(window).on( 'resize', createSlick );
+
+</script>
+</body>
+</html>
